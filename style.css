@@ -57,6 +57,10 @@ body {
   transform: translateY(-1px);
 }
 
+.nav-link:active {
+  transform: scale(0.96);
+}
+
 /* CTA BUTTON */
 .nav-cta {
   background: #111;
