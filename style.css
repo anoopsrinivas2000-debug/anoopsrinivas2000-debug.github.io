@@ -244,3 +244,35 @@ html {
   color: #111;
   font-size: 14px;
 }
+.hero-section {
+  padding: 80px 6%;
+}
+
+.hero-box {
+  height: 520px;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.35)
+    ),
+    url("images/hero.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-overlay {
+  padding: 60px;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero-overlay p {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
