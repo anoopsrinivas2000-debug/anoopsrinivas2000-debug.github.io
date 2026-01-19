@@ -5,17 +5,14 @@
   <title>Hima Estates</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Luxury Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-content reveal">
+  <div class="hero-content">
     <h1>Find Your Perfect Home Today</h1>
     <p>
       We provide tailored real estate solutions, guiding you through every step
@@ -25,10 +22,9 @@
   </div>
 </section>
 
-<!-- OFFERINGS -->
-<section class="reveal">
+<section>
   <h2>COMPREHENSIVE HOLIDAY STAY & EXPERIENCE SOLUTIONS</h2>
-  <p class="subtitle">
+  <p>
     At Hima Estates, we don’t just offer places to stay — we curate complete
     holiday home experiences designed to help you relax, reconnect, and create
     lasting memories.
@@ -52,8 +48,7 @@
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact reveal" id="contact">
+<section class="contact" id="contact">
   <h2>Let’s Make Your Holiday Experience Effortless</h2>
 
   <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
@@ -67,23 +62,6 @@
 <footer>
   <p>© Hima Estates. All rights reserved.</p>
 </footer>
-
-<!-- FRAMER STYLE SCROLL ANIMATION -->
-<script>
-  const reveals = document.querySelectorAll(".reveal");
-
-  function revealOnScroll() {
-    reveals.forEach(el => {
-      const top = el.getBoundingClientRect().top;
-      if (top < window.innerHeight - 100) {
-        el.classList.add("active");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", revealOnScroll);
-  revealOnScroll();
-</script>
 
 </body>
 </html>
