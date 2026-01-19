@@ -10,37 +10,26 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-  <script>
-  const reveals = document.querySelectorAll(".reveal");
 
-  window.addEventListener("scroll", () => {
-    reveals.forEach(el => {
-      const top = el.getBoundingClientRect().top;
-      if (top < window.innerHeight - 100) {
-        el.classList.add("active");
-      }
-    });
-  });
-</script>
 <body>
 
 <!-- HERO -->
-<section class="hero reveal">
-  <div class="hero-content">
+<section class="hero">
+  <div class="hero-content reveal">
     <h1>Find Your Perfect Home Today</h1>
     <p>
       We provide tailored real estate solutions, guiding you through every step
       with personalized experiences that meet your unique needs and aspirations.
     </p>
-    <a href="#properties" class="btn">Explore Properties</a>
+    <a href="#contact" class="btn">Explore Properties</a>
   </div>
 </section>
 
 <!-- OFFERINGS -->
-<section class="offerings reveal">
+<section class="reveal">
   <h2>COMPREHENSIVE HOLIDAY STAY & EXPERIENCE SOLUTIONS</h2>
   <p class="subtitle">
-    At Hima Estates, we don’t just offer places to stay, we curate complete
+    At Hima Estates, we don’t just offer places to stay — we curate complete
     holiday home experiences designed to help you relax, reconnect, and create
     lasting memories.
   </p>
@@ -48,121 +37,53 @@
   <div class="offer-grid">
     <div class="offer-box">
       <h3>Premium Holiday Homes</h3>
-      <p>
-        Thoughtfully designed homes offering privacy, comfort, and a sense of
-        belonging, perfect for families and groups.
-      </p>
+      <p>Thoughtfully designed homes offering privacy, comfort, and elegance.</p>
     </div>
 
     <div class="offer-box">
       <h3>Private & Corporate Events</h3>
-      <p>
-        Host intimate celebrations, gatherings, and corporate offsites in
-        serene, well-equipped spaces.
-      </p>
+      <p>Host intimate celebrations and corporate offsites in serene spaces.</p>
     </div>
 
     <div class="offer-box">
-      <h3>Corporate and Wellness Retreats</h3>
-      <p>
-        Curated environments ideal for team bonding, wellness, and mindful
-        getaways away from city chaos.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- PROPERTIES -->
-<section class="properties reveal" id="properties">
-  <h2>Discover homes tailored to your lifestyle and needs</h2>
-
-  <div class="property-grid">
-    <div class="property-card">
-      <img src="images/property1.jpg" alt="Property">
-      <h3>For Rent KD road, Mysore Himalaya</h3>
-      <p>6 beds · ₹40,000 / night</p>
-    </div>
-
-    <div class="property-card">
-      <img src="images/property2.jpg" alt="Property">
-      <h3>For Rent KD road, Mysore Himalaya</h3>
-      <p>6 beds · ₹40,000 / night</p>
-    </div>
-
-    <div class="property-card">
-      <img src="images/property3.jpg" alt="Property">
-      <h3>For Rent KD road, Mysore Himalaya</h3>
-      <p>6 beds · ₹40,000 / night</p>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about reveal">
-  <h2>REDEFINING THE WAY HOLIDAY HOMES ARE EXPERIENCED</h2>
-  <p>
-    Our homes are crafted to reflect authenticity, calm, and comfort. Every
-    space tells a story — blending heritage, thoughtful design, and modern
-    amenities to offer an experience that feels personal and meaningful.
-  </p>
-</section>
-
-<!-- VISION -->
-<section class="vision reveal">
-  <h2>OUR VISION</h2>
-  <p>
-    To create serene private escapes where guests can slow down, reconnect with
-    themselves, and enjoy thoughtfully curated holiday experiences rooted in
-    warmth and simplicity.
-  </p>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials reveal">
-  <h2>What Our Clients Say</h2>
-
-  <div class="testimonial-grid">
-    <div class="testimonial">
-      <p>
-        “The experience was truly exceptional. The home felt peaceful, elegant,
-        and incredibly welcoming.”
-      </p>
-      <span>— Guest</span>
-    </div>
-
-    <div class="testimonial">
-      <p>
-        “A perfect getaway with attention to every detail. We felt completely
-        taken care of.”
-      </p>
-      <span>— Guest</span>
-    </div>
-
-    <div class="testimonial">
-      <p>
-        “One of the most memorable stays we’ve had. Highly recommended.”
-      </p>
-      <span>— Guest</span>
+      <h3>Corporate & Wellness Retreats</h3>
+      <p>Calm, focused environments ideal for reflection and renewal.</p>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact reveal">
+<section class="contact reveal" id="contact">
   <h2>Let’s Make Your Holiday Experience Effortless</h2>
 
   <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5"></textarea>
-
+    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
     <button type="submit">Send Message</button>
   </form>
 </section>
-  
+
 <footer>
   <p>© Hima Estates. All rights reserved.</p>
 </footer>
+
+<!-- FRAMER STYLE SCROLL ANIMATION -->
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    reveals.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        el.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
 
 </body>
 </html>
