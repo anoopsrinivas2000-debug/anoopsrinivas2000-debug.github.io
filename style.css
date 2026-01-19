@@ -93,3 +93,28 @@ footer {
   background: #000;
   color: #fff;
 }
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .hero-content {
+    padding: 0;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    font-size: 13px;
+  }
+
+}
