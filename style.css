@@ -259,3 +259,58 @@ footer {
     height: 220px;
   }
 }
+/* PROPERTY PAGE */
+.property-hero img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.property-content {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+.property-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.description {
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.property-content ul {
+  padding-left: 18px;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #111;
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+}
