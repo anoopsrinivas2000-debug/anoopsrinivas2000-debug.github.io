@@ -31,12 +31,15 @@ section {
 /* HERO */
 .hero {
   min-height: 100vh;
-  background:
+  background-image:
     linear-gradient(
-      rgba(255, 255, 255, 0.82),
-      rgba(255, 255, 255, 0.82)
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
     ),
-    url("images/hero.jpg") center / cover no-repeat;
+    url("./images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
