@@ -31,10 +31,10 @@ section {
 /* HERO */
 .hero {
   min-height: 100vh;
-  background: 
+  background:
     linear-gradient(
-      rgba(255,255,255,0.85),
-      rgba(255,255,255,0.85)
+      rgba(255, 255, 255, 0.82),
+      rgba(255, 255, 255, 0.82)
     ),
     url("images/hero.jpg") center / cover no-repeat;
   display: flex;
