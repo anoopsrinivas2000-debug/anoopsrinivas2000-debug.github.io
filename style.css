@@ -271,6 +271,26 @@ html {
   font-size: 48px;
   margin-bottom: 16px;
 }
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 120px 6%;
+}
+
+.feature {
+  padding: 40px;
+  transition: transform 0.4s ease;
+}
+
+.feature span {
+  font-size: 48px;
+  color: #ccc;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
 
 .hero-overlay p {
   font-size: 16px;
